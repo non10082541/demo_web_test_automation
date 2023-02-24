@@ -4,4 +4,4 @@ How to open website for windows
  - open the folder you
  - run flie npm install.bat
  - run flie npm start.bat
- - open browser and goto 127.0.0.1:3000
+ - open browser and goto 127.0.0.1:300
