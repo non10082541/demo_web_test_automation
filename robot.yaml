@@ -1,0 +1,54 @@
+tasks:
+  # Run all tasks:
+  #   shell: python -m robot --report NONE --outputdir output --logtitle "*** Task log ***" ./Member/member_task.robot
+  # --- Account Downline Users Bo ---#
+  ทดสอบ log in:
+    robotTaskName: ทดสอบ log in สำเร็จ
+  ทดสอบ log in ไม่สำเร็จ โดยไม่ใส่ Username: 
+    robotTaskName: ทดสอบ log in ไม่สำเร็จ โดยไม่ใส่ Username
+  ทดสอบ log in ไม่สำเร็จ โดยไม่ใส่ Password:
+    robotTaskName: ทดสอบ log in ไม่สำเร็จ โดยไม่ใส่ Password
+  ทดสอบ log in ไม่สำเร็จ โดยใส่ Username ไม่ถูกต้อง:
+    robotTaskName: ทดสอบ log in ไม่สำเร็จ โดยใส่ Username ไม่ถูกต้อง 
+  ทดสอบ log in ไม่สำเร็จ โดยใส่ Password ไม่ถูกต้อง:
+    robotTaskName: ทดสอบ log in ไม่สำเร็จ โดยใส่ Password ไม่ถูกต้อง
+  ทดสอบแสดงข้อมูล member:
+    robotTaskName: ทดสอบแสดงข้อมูล member 
+  ทดสอบ log out ไม่สำเร็จ:
+    robotTaskName: ทดสอบ log out ไม่สำเร็จ
+  ทดสอบ log out สำเร็จ:
+    robotTaskName: ทดสอบ log out สำเร็จ
+  ทดสอบเพิ่ม member สำเร็จ:
+    robotTaskName: ทดสอบเพิ่ม member สำเร็จ
+  ทดสอบเพิ่ม member ไม่สำเร็จ โดยไม่กรอก firstname:
+    robotTaskName: ทดสอบเพิ่ม member ไม่สำเร็จ โดยไม่กรอก firstname
+  ทดสอบเพิ่ม member ไม่สำเร็จ โดยไม่กรอก lastname:
+    robotTaskName: ทดสอบเพิ่ม member ไม่สำเร็จ โดยไม่กรอก lastname
+  ทดสอบเพิ่ม member ไม่สำเร็จ โดยไม่กรอก username:
+    robotTaskName: ทดสอบเพิ่ม member ไม่สำเร็จ โดยไม่กรอก username
+  ทดสอบเพิ่ม member ไม่สำเร็จ โดยไม่กรอก password:
+    robotTaskName: ทดสอบเพิ่ม member ไม่สำเร็จ โดยไม่กรอก password
+  ทดสอบเพิ่ม member ไม่สำเร็จ โดยไม่กรอก confirm password:
+    robotTaskName: ทดสอบเพิ่ม member ไม่สำเร็จ โดยไม่กรอก confirm password
+  ทดสอบเพิ่ม member ไม่สำเร็จ โดยไม่กรอก telephone:
+    robotTaskName: ทดสอบเพิ่ม member ไม่สำเร็จ โดยไม่กรอก telephone
+  ทดสอบเพิ่ม member ไม่สำเร็จ โดยไม่กรอก email:
+    robotTaskName: ทดสอบเพิ่ม member ไม่สำเร็จ โดยไม่กรอก email
+  ทดสอบเพิ่ม member ไม่สำเร็จ โดยไม่กรอก birhday:
+    robotTaskName: ทดสอบเพิ่ม member ไม่สำเร็จ โดยไม่กรอก birhday
+  ทดสอบกรอก password และ Confirm Password ไม่ตรงกัน:
+    robotTaskName: ทดสอบกรอก password และ Confirm Password ไม่ตรงกัน 
+  ทดสอบกรอก email addressโดยไม่ใส่ @:
+    robotTaskName: ทดสอบกรอก email addressโดยไม่ใส่ @
+
+
+  
+  
+condaConfigFile: conda.yaml
+artifactsDir: output
+PATH:
+  - .
+PYTHONPATH:
+  - .
+ignoreFiles:
+  - .gitignore

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Member</title>
+</head>
+<body>
+    
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%" name="sidebar">
+        <h3 class="w3-bar-item">Hello: <%= object.fname %></h3>
+        <a href="/login" class="w3-bar-item w3-button" style="background-color: rgb(244, 110, 110);">Logout</a>
+        
+    </div>
+
+    <div style="margin-left:15%">
+        <div class="w3-container w3-teal">
+            <h1>My Profile</h1>
+        </div>
+        <div>
+            <form action="/">
+                <div class="container2">
+
+                    <h1>Welcome: <%= object.fname %></h1>
+                    <h2>Your Info</h2>
+                    <hr>
+                        
+                    <label for="fname"><b>Frist name: </b></label>
+                    <label for="fname" name="fname"><b><%= object.fname %></b></label><br>
+                
+                    <label for="lname"><b>Last name: </b></label>
+                    <label for="lname" name="lname"><b><%= object.lname %></b></label><br>
+                   
+                    <label for="nname"><b>Nick name: </b></label>
+                    <label for="nname" name="nname"><b><%= object.nname %> </b></label><br>
+                    
+                    <label for="user"><b>Username: </b></label>
+                    <label for="user" name="username"><b><%= object.user %> </b></label><br>
+        
+                    <label for="psw"><b>Password: </b></label>
+                    <label name="psw"><b><%= object.psw %> </b></label><br>
+                                            
+                    <label for="telephone"><b>Telephone: </b></label>
+                    <label name="telephone"><b><%= object.telephone %> </b></label><br>
+        
+                    <label for="address"><b>Address: </b></label>
+                    <label name="address"><b><%= object.address %> </b></label><br>
+        
+                    <label for="email"><b>Email: </b></label>
+                    <label name="email"><b><%= object.email %> </b></label><br>
+        
+                    <label for="birthday"><b>Birthday: </b></label>
+                    <label name="birthday"><b><%= object.birthday %>  </b></label><br>
+        
+                    <label for="rule"><b>Rule: </b></label>
+                    <label name="rule"><%= object.rule %> </b></label><br>
+        
+                    <hr>
+                </div>
+            </form>
+        </div>
+    </div>
+
+   
+</body>
+</html>

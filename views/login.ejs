@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Run APP</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <h1>login page</h1>
+
+        <form action="/login" method="post">
+        <!-- <form action="/create" method="post"></form> -->
+            <label for="fname">Username:</label><br>
+            <input type="text" id="username" name="username" value="username1"  required><br>
+
+            <label for="lname">Password:</label><br>
+            <input type="text" id="password" name="password" value="test" required><br><br>
+
+            <input type="submit" value="Login" class="btn-login">
+        </form>
+        <form action="/register" >
+            <input type="submit" value="Register" class="btn-regis" >
+        </form>
+        <div>
+            <p style="color: red; font-size: 20px;"><%= error %></p>
+        </div>
+    </div>
+
+</body>
+</html>
